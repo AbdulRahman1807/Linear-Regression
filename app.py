@@ -50,9 +50,7 @@ if st.button("🚀 Predict Sales"):
 
         scaled_data = scaler.transform(input_data)
 
-        selected_data = selector.transform(scaled_data)
-
-        prediction = model.predict(selected_data)
+        prediction = model.predict(scaled_data)
 
         st.success(f"📈 Predicted Coffee Sales: **{prediction[0]:.2f} units**")
 
