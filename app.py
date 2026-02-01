@@ -27,7 +27,7 @@ st.subheader("📥 Enter Input Features")
 col1, col2 = st.columns(2)
 
 with col1:
-    Temperature_C = st.number_input("Temperature (°C)", value=25.0)
+    Temperature_C = st.number_input("Temperature (°C)", value=25.0,step=1)
     Is_Weekend = st.selectbox("Is Weekend?", [0, 1])
     Is_Raining = st.selectbox("Is Raining?", [0, 1])
 
